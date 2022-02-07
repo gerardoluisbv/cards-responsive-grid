@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica, sans-serif;
+  background-color: #1c2f57;
+}
+
+
+.logo {
+  padding: .3em;
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.logo img{
+  width: 110px;
+  height: 30px;
+}
+
+h1 {
+  margin-bottom: 0;
+  margin-top: .6em;
+  font-size: 1.5em;
+  margin-left: 15px;
+}
+
+h1#normal  {
+  white-space: normal;
+  }
+
+h3 {
+  margin-bottom: .2em;
+  margin-top: .2em;
+  margin-left: 10px;
+  color: #e5e5e5;
+}
+
+p {
+  margin-top: .2em;
+  margin-left: 10px;
+  color: #e5e5e5;
+}
+
+.form_search {
+  background-color: #2d4f83;
+  padding-top: .2em;
+  padding: .2em;
+  margin-bottom: 5px;
+}
+
+.content {
+  padding-top: 0.8em;
+  max-width: 1024px;
+  margin: 0 auto;
+  padding-bottom: 0px;
+  font-family: 'Roboto', sans-serif;
+  font-size: .8em;
+}
+
+
+.cuerpo {
+  padding: 0 15px;
+}
+
+
+/* CLASE PARA LA GRILLA DE LAS  CARDS*/
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 10px;
+  grid-template-rows: repeat(5,auto);
+  grid-auto-flow: dense; /* COLOCA ABAJO LAS CARDS CUANDO LA PANTALLA ES PEQUEÑA */
+}
+
+
+.card {
+  background-color: #2d4f83;
+}
+
+.card-cuerpo {
+  background-color: rgba(0,0,0,0.8);
+ 
+}
+
+.foot_card {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-content: center;
+  background-color: #00b886;
+  padding-top: .4em;
+  padding-bottom: .4em;
+  padding-left: .5em;
+}
+
+.text_card {
+  padding-right: 5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-content: flex-start;
+  margin-bottom: .8em;
+  
+}
+
+.content_card {
+  display: flex;
+  flex-direction: column;
+  justify-content:space-between; 
+  height: 9em;
+  width: auto;
+  color: white;
+  
+  
+  
+}
+
+/* SE APLICAN ESTOS ESTILOS CUANDO EL SCREEN ES MAYOR A 650px */
+
+/*
+@media screen and (min-width: 650px) {
+  .absolute {
+    position: relative;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+  }
+  .absolute2 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+
+}
+
+@media screen and (min-width: 768px) {
+ 
+}
+
+*/
+
+
+/* estilos del nuevo icono em input */
+
+.input-wrapper {
+  position: relative;
+  width: 350px;
+  padding-top: .4em;
+  padding-bottom: .4em;
+}
+
+.input {
+  padding: 15px 15px 15px 42px;
+  outline: none;
+  font-size: 1.1em;
+  width:100%;
+  height: 30px;
+  background: #eeeeee;
+  border: none;
+  color: #7f7f7f;
+  border-radius: 5px;
+}
+
+
+
+.input-icon {
+  color: #7f7f7f;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.input:hover {
+  outline: none;
+ }
+
+
+ @media screen and (max-width: 393px) {
+
+  .content_card {
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between; 
+    height: 150px; 
+  }
+
+
+  .input-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .input {
+    padding: 15px 15px 15px 42px;
+    outline: none;
+    font-size: 1.3em;
+  
+    width: 100%;
+    height: 30px;
+    background: white;
+    border: none;
+    color: #7f7f7f;
+    border-radius: 5px;
+  }
+  
+  .input-icon {
+    color: #7f7f7f;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+
+
+}
